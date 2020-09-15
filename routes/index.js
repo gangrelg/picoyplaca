@@ -11,6 +11,8 @@ router.get(
       .isString()
       .isLength({ min: 6, max: 7 })
       .matches('^[a-zA-Z0-9äöüÄÖÜ]*$'),
+    query('date').isString(),
+    query('time').isString().matches('^$|^(([01][0-9])|(2[0-3])):[0-5][0-9]$'),
   ],
   (req, res) => {
     const { plate, date, time } = req.query;
