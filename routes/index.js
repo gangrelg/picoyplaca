@@ -64,8 +64,8 @@ router.get(
         let afterTimeRTwo = moment(maxHourRTwo, format);
 
         if (
-          checkTime.isBetween(beforeTimeROne, afterTimeROne) ||
-          checkTime.isBetween(beforeTimeRTwo, afterTimeRTwo)
+          !checkTime.isBetween(beforeTimeROne, afterTimeROne) &&
+          !checkTime.isBetween(beforeTimeRTwo, afterTimeRTwo)
         ) {
           return res.status(200).json({ msg: 1 });
         } else {
