@@ -22,8 +22,8 @@ describe('/api/placa', () => {
   });
 
   describe('GET /', () => {
-    it('should return 1', async () => {
-      const obj = { msg: 1 };
+    it('should return 0', async () => {
+      const obj = { msg: 0 };
       const res = await request(server).get(
         '/api/placa/find/?plate=pbd4155&date=09/16/2020&time=08:08'
       );
@@ -32,8 +32,8 @@ describe('/api/placa', () => {
   });
 
   describe('GET /', () => {
-    it('should return 0', async () => {
-      const obj = { msg: 0 };
+    it('should return 1', async () => {
+      const obj = { msg: 1 };
       const res = await request(server).get(
         '/api/placa/find/?plate=pbd4155&date=09/16/2020&time=06:00'
       );
