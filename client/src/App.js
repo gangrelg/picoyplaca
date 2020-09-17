@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Navbar from './components/navbar';
 import Form from './components/form';
+import Footer from './components/footer';
 import './App.css';
 
 export default function App() {
@@ -12,8 +13,8 @@ export default function App() {
     <Fragment>
       <Navbar />
       <Container className='main-container'>
-        <Row>
-          <Col sm={12}>
+        <Row className='form-row'>
+          <Col sm={8}>
             <Card>
               <Card.Img variant='top' src='/logows.png' />
               <Card.Body>
@@ -24,6 +25,7 @@ export default function App() {
           </Col>
         </Row>
       </Container>
+      <Footer />
     </Fragment>
   );
 }
