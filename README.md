@@ -6,6 +6,8 @@ El objetivo de este proyecto es dar a conocer si un vehiculo puede circular o no
 
 El proyecto esta basado en NodeJS, ExpressJS y ReactJS como stack por lo cual sirvase ver la seccion de "Prerequisites".
 
+* [Demo](https://picoyplaca-sb.herokuapp.com/)
+
 ### Prerequisites
 
 ```
